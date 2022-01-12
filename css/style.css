@@ -18,6 +18,8 @@ a{
     --background-stuff: #F5F4FA;
     --button: #2196F3;
     --button-second-color: #F5F4FA;
+    --button-hover-color: #188CE8;
+
 }
 
 body{
@@ -30,6 +32,7 @@ body{
 }
 
 .logo, .logo-footer{
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     color: var(--main-text-color);
@@ -37,7 +40,6 @@ body{
 
 
 .first-logo-part{
-    font-family: 'Raleway';
     font-weight: 400;
     color: var(--logo-first-part-color);
 }
@@ -46,7 +48,9 @@ body{
     color: var(--p-color);  
  }
 
-.nav a:visited{
+ 
+
+ .nav a{
     color: var(--main-text-color);  
  }
 
@@ -55,6 +59,10 @@ body{
 .nav a:focus,
 .nav a:active{
     color: var(--main-link-color-active);  
+ }
+
+ .nav a.is-active{
+    color: var(--main-link-color-active); 
  }
 
  .nav{
@@ -89,6 +97,10 @@ h1{
 
 }
 
+.offer-button:hover, .offer-button:focus{
+    background-color: var(--button-hover-color);
+}
+
 .our-projects-buttons{
     font-weight: 500;
     font-size: 16px;
@@ -108,8 +120,9 @@ h1{
 }
 
 .benefits h3{
-    font-weight: bold;
+    font-weight: 700;
     line-height: 16px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
@@ -163,6 +176,7 @@ h1{
 }
 
 .footer-contacts p{
+    font-style: normal;
     color: var(--white);
 }
 
